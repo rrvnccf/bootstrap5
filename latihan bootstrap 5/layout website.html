@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout website</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+    <div class="container m-5">
+        <h3 class="text-secondary"> Display</h3>
+
+        <!-- inline meunggunakan span -->
+        <!-- span tidak menambah garis jika ada element baru yang ditambahkan -->
+        <span>Reicha</span>
+        <span>Febrin</span>
+        <br>
+
+        <!-- lebar dan tinggi akan sesuai dengan elemen -->
+        <span class="bg-secondary">Reicha</span>
+        <span class="bg-primary">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
+        <br>
+
+        <!-- tinggi dan lebarnya tidak bisa diatur -->
+        <span class="bg-primary" style="width: 500px; height: 100px;">Retalk</span>
+        <br>
+
+        <!-- margin dan padding hanya mempengaruhi kanan kirinya namun tidak mempengaruhi atas dan bawahnya -->
+        <span class="bg-secondary m-5 p-5">Reicha</span>
+        <br>
+
+        <!-- block menggunakan div -->
+        <!-- div akan menambahkan garis baru jika ada elemet baru -->
+        <div>Reicha</div>
+        <div>Febrin</div>
+
+        <!-- tinggi dan lebar bisa ditambahkan dengan menambahkan height dan width -->
+        <div style="width: 500px ; height: 300px;" class="bg-success">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div>
+        
+        <br>
+        <!-- inline block -->
+        <div class="d-inline-block">Reicha</div>
+        <div class="d-inline-block">another reicha</div>
+        <br>
+
+        <!-- inline ke block -->
+        <span class="d-block">Indonesia </span>
+        <span class="d-block">Raya</span>
+
+        <!-- block ke inline -->
+        <div class="d-inline">Indonesia</div>
+        <div class="d-inline">Raya</div>
+        <br>
+
+        <h3 class="text-secondary">Float</h3>
+        <div class="container bg-black clearfix">
+            <div class="bg-warning w-25 h-25 float-end">element 1</div>
+            <div class="bg-warning w-25 h-25 float-end">element 2</div>
+
+        </div>
+        <br>
+
+        <h3 class="text-secondary">Position</h3>
+        <div class="container bg-black" style="width: 500px; height: 500px;">
+            <div class="bg-warning w-25 h-25 position-relative-top">element 1</div>
+            <div class="bg-warning w-25 h-25 position-relative-top">element 2</div>
+        </div>
+        <br>
+        <div class="bg-danger w-25 h-25 position-fixed">element</div>
+        <br>
+        <div class="container bg-black" style="width: 500px; height: 500px;">
+            <div class="bg-warning w-25 h-25">element 1</div>
+            <div class="bg-secondary w-25 h-25 position-absolute">element 2</div>
+            <div class="bg-primary w-25 h-25">element 3</div>
+        </div>
+    
+
+    </div>
+</body>
+</html>
